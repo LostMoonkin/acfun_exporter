@@ -31,6 +31,7 @@ class Sqlite3Pipeline(object):
         self.conn.commit()
 
     def close_spider(self, spider):
+        self.cur.close()
         self.conn.close()
 
     def process_item(self, item, spider):
