@@ -90,4 +90,5 @@ ENV/
 
 .DS_Store
 .idea
-.article_db.db
+.vscode
+article_db.db
